@@ -36,9 +36,11 @@ const Search = () => {
   };
 
   const handleKey = (e) => {
-    e.key === "Enter" && handleSearch();
+    if (e.code === "Enter") {
+      e.preventDefault();
+      handleSelect();
   };
-
+}
   const handleSelect = async () => {
     //check whether the group(chats in firestore) exists, if not create
     const combinedId =
