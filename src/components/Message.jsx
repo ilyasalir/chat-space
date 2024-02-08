@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import { ChatContext } from '../context/ChatContext'
+import { Link } from 'react-router-dom'
 
 const Message = ({message}) => {
 
@@ -33,7 +34,10 @@ const Message = ({message}) => {
             <p>
               {message.text}
             </p>
-            {message.img &&<img src={message.img} alt="" />}
+            {message.img &&
+            <Link to={message.img}>
+              <img src={message.img}  alt="" />
+            </Link>}
             <span>{formattedDate}</span>
         </div>
     </div>

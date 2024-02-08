@@ -283,6 +283,7 @@
                     color: #ddddf7;
                     padding: 5px;
                     width: 20%;
+                    cursor: pointer;
                     @include tablet {
                         padding: 1px;
                         width: 100%;
@@ -414,7 +415,7 @@
                             white-space: normal;
                             word-wrap: break-word;
                             overflow-wrap: break-word;
-                            max-width: 100%;
+                            max-width: fit-content;
                         }
                         span{
                             font-size: 12px;
