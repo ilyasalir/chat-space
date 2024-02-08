@@ -414,7 +414,7 @@
                             white-space: normal;
                             word-wrap: break-word;
                             overflow-wrap: break-word;
-                            width: fit-content;
+                            max-width: 100%;
                         }
                         span{
                             font-size: 12px;
